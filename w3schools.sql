@@ -1,13 +1,6 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+-- Setting database options (SQL Server doesn't support these MySQL-specific options directly)
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
 
 
 CREATE DATABASE IF NOT EXISTS `w3schools` /*!40100 DEFAULT CHARACTER SET utf8 */;
@@ -26,8 +19,7 @@ CREATE TABLE `categories` (
   `CategoryID` int(11) NOT NULL,
   `CategoryName` varchar(255) DEFAULT NULL,
   `Description` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+) 
 --
 -- Dumping data for table `categories`
 --
